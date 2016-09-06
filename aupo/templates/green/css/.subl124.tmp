@@ -1,0 +1,91 @@
+body{font-size: 12px;font-family: "Microsoft Yahei";margin:0;padding: 0;}
+::selection{background:#1ABC9C;}
+a{color:#ccc;}
+a:hover{color: #aaa;text-decoration: none;}
+li{list-style: none;}
+ul{margin:0;padding: 0;}
+@font-face{
+	font-family:'Raleway-Bold';
+	src:url('../fonts/Raleway-Bold.ttf');
+}
+@font-face{
+	font-family: 'Lato-Light';
+	src:url('../fonts/Lato-Light.ttf');
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+.nav.nav-mini{height: 60px;line-height:60px;background-color: #fff;border-bottom: 1px solid #eee;box-shadow: 0 0 10px rgba(0,0,0,0.1);transition: height .4s ease;overflow: hidden;z-index: 1}
+.nav.nav-mini a{color:#444;}
+.nav.nav-mini a:hover{color:#1ABC9C !important;}
+
+.nav-mobile{width: 100%;height:8em;background-color: #fff;display: none;position: relative;}
+.left-mobile{width: 20%;height:8em;}
+.left-line{width: 3em;height:3em;float:right;margin-top: 2.5em;cursor: pointer;border:1px solid #eee;border-radius: 3px;}
+.left-line span{width: 2em;height: 3px;background-color: #000;float: left;margin-top:0.5em;margin-left: 0.4em;}
+.list-mobile{position: absolute;top:8em;left:0;width: 100%;background-color:#fff;z-index: 2}
+.list-mobile a{display:block;width: 65%;height:3em;border-bottom:1px solid #eee;margin:0 auto;line-height: 3em;}
+.list-mobile a:hover{color:#1ABC9C}
+.nav-right-mobile{width: 60%;float: left;text-align: center;}
+.nav-right-mobile-img{display: inline-block;}
+
+
+
+
+.nav{width: 100%;height:102px;line-height:100px;background-color: transparent;border-bottom: 1px solid rgba(255,255,255,0.2);position: fixed;transition: height .4s ease;z-index: 99}
+.logo{display:block;border-right:1px solid rgba(255,255,255,0.2);padding:0 15px;transition: line-height .4s ease}
+.logo-img{width: 126px;transition: all .4s ease}
+.list{border-right: 1px solid rgba(255,255,255,0.2);padding-right: 15px;transition: line-height .4s ease}
+.list-li-a{padding:0 20px;color:#eee;width: 100px;height: 100px;display: block;}
+.list-li-a:hover{color:#eee;}
+.list-li{float: left;position: relative;}
+.nav-right{height: 102px;width: 130px;}
+.banner{overflow: hidden;}
+.banner-img{background: url('../images/1.jpg') no-repeat center;background-size: cover;}
+.banner-cont{width: 900px;height:90px;top:50%;left:50%;position: absolute;margin-top: -45px;transition:opacity .4s ease;}
+.cont-p{font-size: 64px;font-family: 'Raleway-Bold';font-weight: bold;letter-spacing:2px;color:#eee;text-shadow:1px 1px 1px rgba(0,0,0,0.15)}
+.cont-p-main{font-size:24px;color:#eee;font-family: 'Lato-Light'}
+
+.about{position: absolute;width: 180px;border-top:3px solid #1ABC9C;display: none;}
+.about li{transition: all .3s;}
+.about li:hover{background-color: #2D2D2D;}
+.about li:hover .icon{margin-left: 20px;}
+.about a{color:#aaa;}
+.about a:hover{color:#ccc;}
+.icon{margin-left: 15px;margin-right: 5px;transition: margin-left .3s ease-in-out}
+.list-li li{height:45px;line-height: 45px;background-color: #333;}
+.about-us:after{display: block;height:0;content:"";clear: both;}
+.about-us:hover .about-us-li{display: block;}
+.severs:hover .severs-li{display: block;}
+.resource:hover .resource-li{display: block;}
+.resource-li{left:-15px;}
+
+
+
+.tit{height:4000px;background: #fff;}
+@media (max-width:768px) {
+	.nav-mobile{display: block;}
+	.nav{display: none}
+	.banner-cont{width: 700px;}
+	.cont-p{font-size: 44px;}
+	.cont-p-main{font-size:14px;}
+	.banner-cont{width: 100%;}
+}
+
+
+.tc{text-align: center;}
+.fl{float: left;}
+.fr{float: right;}

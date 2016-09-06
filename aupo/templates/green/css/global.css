@@ -1,0 +1,85 @@
+/*-----------------------*/
+/*2016/5/15 By Bigbrother*/
+/*-----------------------*/
+
+/*GLOBAL*/
+body{font-size: 12px;font-family: "Microsoft Yahei";margin:0;padding: 0;}
+
+/*FONTS*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+.f14px{font-size: 14px;}
+.f16px{font-size: 16px;}
+.f18px{font-size: 18px;}
+.f32px{font-size: 32px;}
+
+
+.c333{color:#333;}
+.c555{color: #555}
+.cb5b5{color:#b5b5b5;}
+.cfff{color: #fff;}
+.cccc{color: #ccc;}
+
+
+.letter{letter-spacing: 2px;}
+.lh25{line-height:25px;}
+
+.indent25{text-indent: 25px;}
+
+/*ALIGNMENT*/
+li{list-style: none;}
+ul{margin:0;padding: 0;}
+.tc{text-align: center;}
+.fl{float: left;}
+.fr{float: right;}
+.bold{font-weight: bold;}
+
+.m{margin:0 auto;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mt80{margin-top: 80px;}
+.mt100{margin-top: 100px;}
+
+.mr10{margin-right:10px;}
+
+.mb20{margin-bottom: 20px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+.mb80{margin-bottom: 80px;}
+.mb150{margin-bottom: 150px;}
+
+.pdt10{padding-top:10px;}
+.pdt20{padding-top:20px;}
+.pdt50{padding-top:50px;}
+.pdt100{padding-top:100px;}
+
+.pdr70{padding-right:70px;}
+
+.pdb50{padding-bottom:50px;}
+
+.hidden{overflow: hidden;}
+
+/*TYPE*/
+.border_r{border-right:1px solid #e8e8e8;}
+.pointer{cursor:pointer;}
+.inline{display: inline-block}
+.relative{position: relative;}
+.absolute{position: absolute;}

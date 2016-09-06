@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{aspcms:sitetitle}</title>
+<meta name="Keywords" content="[about:keyword]" >
+<meta name="Description" content="[about:desc]" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/index.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/global.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/about.css">
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/bootstrap.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery.nicescroll.min.js"></script>
+</head>
+<style>
+	body{background: #f8f8f8;}
+</style>
+<body>
+<div class="scroll-top" onclick="scrollMove()">&gt;</div>
+	{aspcms:top}
+	<div class="banner-cust"></div>
+<div class="container" style="padding-top:80px;">
+	<div class="cust-list clearfix">
+		<h3 class="tc" style="font-family: '宋体';"><span class="bold">成功案例</span></h3>
+		<h5 class="tc" style="color:#b9b9b9;padding-bottom: 50px;padding-top: 10px;">- 雅宝信息技术有限公司致力于为每一位客户提供优秀的服务 -</h5>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">厦门航空</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/xiamenair.jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">中国农行厦门分行</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/aboc.jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">中国移动</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/chinaMobile.jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">国家电网</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/STATEGRID.jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">兴业银行厦门分行</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/fjxy.jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">万利达</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/wld.jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">福建马坑矿业</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/fujianmk.jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">厦门华夏银行</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/74(2).jpg">
+				</div>
+				<div class="col-md-4 relative mb40 tc">
+					<div class="list-float absolute tc">厦门农商银行</div>
+					<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/xmns.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{aspcms:foot}
+</body>
+<script>
+$('.left-line').click(function(){
+	$('.list-mobile').slideToggle()
+});
+
+$(document).ready( function() {
+	$("html").niceScroll({
+		cursorborder:'1px solid rgba(255,255,255,0.5)',
+		zindex:99
+	}); 
+});
+$(window).scroll(function(){
+	var top = $(window).scrollTop();
+	if(top >= 10){
+		$('.scroll-top').css({'opacity':'1'})
+	}else if(top <= 50){
+		$('.scroll-top').css({'opacity':'0'})
+	}
+})
+function scrollMove(){
+	var h = 0
+	$('body,html').animate({
+		scrollTop:h
+	},300);
+}
+</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{aspcms:sorttitle}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="{aspcms:sortkeyword}" >
+<meta name="Description" content="{aspcms:sortdesc}" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/index.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/global.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/about.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/case.css">
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/bootstrap.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery.nicescroll.min.js"></script>
+</head>
+<body>
+<div class="scroll-top" onclick="scrollMove()">&gt;</div>
+{aspcms:top}
+<div class="banner-case"></div>
+<div class="about-bud mt40">
+	<h2 class="tc" style="font-family: '宋体';font-size: 24px;">雅宝 <span class="bold">解决方案</span></h2>
+	<p class="tc f14px" style="color:#b9b9b9;padding-bottom: 50px;padding-top: 10px;">- 雅宝历经20年来累计了多种解决方案，但雅宝仍旧不断的在突破争取获得更多客户的满意 -</p>
+	<div class="container">
+		<div class="row f18px tc">
+			<div class="col-md-3 col-xs-6"><i class="case-icon glyphicon glyphicon-ok"></i><br><p class="mt10">多种解决方案</p><small>您可以享受雅宝针对每一位用户精心定制的多种解决方案</small></div>
+			<div class="col-md-3 col-xs-6"><i class="case-icon glyphicon glyphicon-thumbs-up"></i><br><p class="mt10">完善的售后服务</p><small>雅宝是一家拥有一套完善售后服务的企业 您可以放心使用我们的产品</small></div>
+			<div class="col-md-3 col-xs-6"><i class="case-icon glyphicon glyphicon-user"></i><br><p class="mt10">用户至上的服务理念</p><small>雅宝服务20年来从始至终都秉承着以用户为中心的理念</small></div>
+			<div class="col-md-3 col-xs-6"><i class="case-icon glyphicon glyphicon-wrench"></i><br><p class="mt10">专业的技术支持</p><small>雅宝专业的技术团队永远走在公司的最前线替用户解决各种专业问题</small></div>
+		</div>
+	<div class="case-line mt40"></div>
+	</div>
+</div>
+<div class="container mb150">
+	<div class="row">
+		{aspcms:list size=12 order=order}
+		<div class="col-md-12 clearfix mt50" style="padding:10px;border-bottom: 3px solid #eee;background: #F9F9F9">
+			<div class="col-md-5 fl tc"><img src="[list:pic]" width="100%" height="auto"></div>
+			<div class="col-md-7 fl">
+				<h3>[list:title]</h3>
+				<p style="color:#999">[list:author] / [list:date style=yy-m-d] / 浏览量：[list:visits]</p>
+				<p class="mt20" style="line-height: 25px;">[list:content len=150]</p>
+				<a href="[list:link]"><button type="button" class="btn btn-danger mt20">查看详情</button></a>
+			</div>
+		</div>
+		{/aspcms:list}
+	</div>
+</div>
+{aspcms:foot}
+</body>
+<script>
+$('.left-line').click(function(){
+	$('.list-mobile').slideToggle()
+});
+
+$(document).ready( function() {
+	$("html").niceScroll({
+		cursorborder:'1px solid rgba(255,255,255,0.5)',
+		zindex:99
+	}); 
+});
+$(window).scroll(function(){
+	var top = $(window).scrollTop();
+	if(top >= 10){
+		$('.scroll-top').css({'opacity':'1'})
+	}else if(top <= 50){
+		$('.scroll-top').css({'opacity':'0'})
+	}
+})
+function scrollMove(){
+	var h = 0
+	$('body,html').animate({
+		scrollTop:h
+	},300);
+}
+</script>
+</html>

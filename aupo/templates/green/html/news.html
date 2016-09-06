@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{aspcms:sitetitle}</title>
+<meta name="Keywords" content="{aspcms:sortkeyword}" >
+<meta name="Description" content="{aspcms:sortdesc}" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/index.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/global.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/about.css">
+<link type="text/css" rel="stylesheet" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/case.css">
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/bootstrap.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery.nicescroll.min.js"></script>
+</head>
+<body>
+<div class="scroll-top" onclick="scrollMove()">&gt;</div>
+{aspcms:top}
+<div class="banner-case"></div>
+<div class="about-bud mt40">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 news-list">
+				<h1>[news:title]</h1>
+				<div><i class="visits glyphicon glyphicon-user"></i>[news:author]</div><div><i class="visits glyphicon glyphicon-eye-open"></i>[news:visits]</div><div><i class="visits glyphicon glyphicon-time"></i>[news:date]</div><br>
+				<div class="news-main mt50">[news:info]</div>
+				<div class="page">
+					上一篇：{aspcms:prev}<br>
+					下一篇：{aspcms:next}
+				</div>
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+	</div>
+</div>
+{aspcms:foot}
+</body>
+<script>
+$('.left-line').click(function(){
+	$('.list-mobile').slideToggle()
+});
+
+$(document).ready( function() {
+	$("html").niceScroll({
+		cursorborder:'1px solid rgba(255,255,255,0.5)',
+		zindex:99
+	}); 
+});
+$(window).scroll(function(){
+	var top = $(window).scrollTop();
+	if(top >= 10){
+		$('.scroll-top').css({'opacity':'1'})
+	}else if(top <= 50){
+		$('.scroll-top').css({'opacity':'0'})
+	}
+})
+function scrollMove(){
+	var h = 0
+	$('body,html').animate({
+		scrollTop:h
+	},300);
+}
+</script>
+</html>

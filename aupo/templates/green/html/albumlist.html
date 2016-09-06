@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{aspcms:sorttitle}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="{aspcms:sortkeyword}" >
+<meta name="Description" content="{aspcms:sortdesc}" >
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/espcms_public.css" rel="stylesheet" />
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/espcms_v5div.css" rel="stylesheet" />
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/slider.css" rel="stylesheet" />
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/espcms_three.css" rel="stylesheet" />
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/productlist.css" rel="stylesheet" />
+
+<SCRIPT src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery.Slide.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery.js" type="text/javascript"></SCRIPT>
+
+<script type="text/javascript">
+	$(window).load(function() {
+		$("#clickmenubotton li span").hover(function() {
+			$(this).addClass("menuhover");
+			$(this).parent().find("ul.subnav").slideDown('fast').show();
+			$(this).parent().hover(function() {
+			}, function() {
+				$(this).parent().find("ul.subnav").fadeOut('fast');
+				$(this).parent().find("span").removeClass("menuhover");
+			});
+		});
+	});
+</script>
+
+</head>
+
+
+<body>
+{aspcms:top}
+
+<div class="espcms_page espcms_page_left_linkbg">
+{aspcms:template src=left.html}
+
+	<div class="espcms_page_right">
+		<div class="espcms_page_typename">产品展示</div>
+		<div class="espcms_page_location">您现在的位置：<a href="{aspcms:sitepath}{aspcms:languagepath}">首页</a>{aspcms:position} &gt; [position:link]{/aspcms:position}
+</div>
+
+		<DIV class=posts>
+                
+                    <UL class=productlist>
+                        {aspcms:list size=9 order=order} 
+                        <li>
+                            <a href="[list:link]" title="[list:title]" ><img class="attachment-small" src="[list:pic]"  title="[list:title]"  alt="[list:title]"  /></a>
+                            <A href="[list:link]" title="[list:title]" class="product_name">[list:title len=50]</A>  
+                        </li>                        
+                        {/aspcms:list}   
+                    </UL>
+                    <DIV class=clear></DIV>
+                
+                </DIV>
+<br /><div align="center">[list:pagenumber len=5]
+			</div>
+
+	<!--<div class="espcms_pic_index pb20">
+			<ul class="lh">
+						{aspcms:list size=10 order=order} 		
+								
+								<li>
+					<div class="p-img ld"><a href="[list:link]"><img src="[list:pic]" width="158"></a></div>
+					<div class="p-name"><a href="[list:link]">[list:title len=10]</a></div>
+			
+				</li>
+
+{/aspcms:list} 	
+				
+								
+								
+				
+			</ul>
+		</div>-->
+	</div>
+</div>
+
+{aspcms:foot}
+
+
+</body>
+
+</html>
+
+
+
+<!--body>
+{aspcmstop}
+
+<div class="wrap list_wrap">
+    {aspcmstemplate src=left.html}
+	
+	<div class="column_m">
+		    <div class="bt">
+			    <h4>图片列表</h4><span>您现在的位置：<a href="{aspcms:sitepath}{aspcms:languagepath}">首页</a>{aspcms:position} &gt; [position:link]{/aspcms:position}</span>
+			</div>
+			<div class="nr">
+				<ul>
+                {aspcms:list size=10 order=id} 
+				    <li><a href="[list:link]">[list:title len=50]</a><span>[list:date style=yy-m-d]</span></li>
+                     {/aspcms:list} 
+				
+				</ul>
+			</div>
+			<div class="pagelink">[list:pagenumber len=5]
+			</div>
+		</div>
+		<div class="clearboth"></div>
+</div>
+
+{aspcmsfoot}
+</body>
+</html>-->
