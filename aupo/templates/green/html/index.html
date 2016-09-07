@@ -89,9 +89,9 @@
 	</nav>
 	<div class="banner">
 		<div class="banners">
-			<div class="banner-img-0 banner-img" onclick="banner()"></div>
-			<div class="banner-img-2 banner-img" onclick="banner()" style="opacity:0"></div>
-			<div class="banner-img-1 banner-img" onclick="banner()" style="opacity:0"></div>
+			<div class="banner-img-0 banner-img"></div>
+			<div class="banner-img-2 banner-img" onclick="window.open('http://www.aupo.com.cn/content/?391.html')" style="opacity:0;cursor: pointer;"></div>
+			<div class="banner-img-1 banner-img" onclick="window.open('http://www.aupo.com.cn/content/?390.html')" style="opacity:0;cursor: pointer;"></div>
 		</div>
 		<div class="banner-cont tc">
 			<p class="cont-p-main">尽心尽力，尽善尽美<br>以服务创造美好未来</p>
@@ -245,9 +245,13 @@ function scrollMove(type,id){
 var i = 1;
 t = function banner(){
 	$('.banner-img').eq(i).css({'z-index':'9','opacity':'1'}).siblings().css({'z-index':'0','opacity':'0'});
+	$('.banner-cont').css('opacity','0');
 	i++;
 	if(i == 3){
 		i = 0;
+	}
+	if(i == 1){
+		$('.banner-cont').css('opacity','1');
 	}
 }
 setInterval(t,4000);

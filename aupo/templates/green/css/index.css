@@ -54,9 +54,9 @@ a:hover{color: #aaa;text-decoration: none;}
 .banners{position:relative;}
 .banner-img{background-size: cover;position:absolute;top:0;left:0;transition:all 2s ease;}
 .banner-img-0{background: url('../images/11.jpg') no-repeat center;}
-.banner-img-1{background: url('../images/haiys19.jpg') no-repeat center;}
-.banner-img-2{background: url('../images/1.jpg') no-repeat center;}
-.banner-cont{width: 900px;height:90px;top:50%;left:50%;position: absolute;margin-top: -45px;transition:opacity .4s ease;z-index:99;}
+.banner-img-1{background: url('../images/d1.jpg') no-repeat center;}
+.banner-img-2{background: url('../images/211.jpg') no-repeat center;}
+.banner-cont{width: 900px;height:90px;top:50%;left:50%;position: absolute;margin-top: -45px;transition:opacity .3s ease;z-index:99;}
 .cont-p-main{font-size:44px;color:#eee;font-family: 'Lato-Light';letter-spacing:15px;}
 .logo-text{display:block;text-align:center;margin-top:-10px;color:#ff0000;}
 
@@ -79,7 +79,7 @@ a:hover{color: #aaa;text-decoration: none;}
 .about-img-1{margin-left: 500px;opacity:0;transition:all 1s .6s ease-out}
 .about-a{color:#1ABC9C;}
 .about-a:hover{color:#1ABC9C;text-decoration: underline;}
-.qrcode{padding:4px;background:#1ABC9C;position: fixed;right: 5px;bottom:130px;z-index: 999;color:#fff;transition:all .3s ease;}
+.qrcode{padding:4px;background:#1ABC9C;position: fixed;right: 5px;bottom:20%;z-index: 999;color:#fff;transition:all .3s ease;}
 
 .litter{width: 100%;}
 .bacground{background-color: #F9F9F9}
