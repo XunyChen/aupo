@@ -61,7 +61,7 @@ a:hover{color: #aaa;text-decoration: none;}
 .logo-text{display:block;text-align:center;margin-top:-10px;color:#ff0000;}
 
 
-.about{position: absolute;width: 180px;border-top:3px solid #1ABC9C;visibility: hidden;opacity: 0;transition: opacity .3s}
+.about{position: absolute;width: 210px;border-top:3px solid #1ABC9C;visibility: hidden;opacity: 0;transition: opacity .3s}
 .about li{transition: all .3s;}
 .about li:hover{background-color: #2D2D2D !important;}
 .about li:hover .icon{margin-left: 20px;}
