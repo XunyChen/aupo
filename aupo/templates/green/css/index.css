@@ -54,7 +54,7 @@ a:hover{color: #aaa;text-decoration: none;}
 .banners{position:relative;}
 .banner-img{background-size: cover;position:absolute;top:0;left:0;transition:all 2s ease;}
 .banner-img-0{background: url('../images/11.jpg') no-repeat center;}
-.banner-img-1{background: url('../images/d1.jpg') no-repeat center;}
+.banner-img-1{background: url('../images/212.jpg') no-repeat center;}
 .banner-img-2{background: url('../images/211.jpg') no-repeat center;}
 .banner-cont{width: 900px;height:90px;top:50%;left:50%;position: absolute;margin-top: -45px;transition:opacity .3s ease;z-index:99;}
 .cont-p-main{font-size:44px;color:#eee;font-family: 'Lato-Light';letter-spacing:15px;}
